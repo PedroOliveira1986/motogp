@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+@font-face{
+
+    font-family: 'motogp';
+    src: url(fonte/hemi\ head\ bd\ it.otf) format('opentype');
+    font-weight: normal;
+}
+
+header {
+    
+    border: 5px;
+    display: flex;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.83);
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+
+header img{
+    
+    width: 100px;
+    border-style: solid;
+    border-radius: 100%;
+    padding: 10px; 
+    display: inline;
+    background-color: white;
+
+}
+
+
+nav{
+
+
+    font-family: 'motogp';
+    text-decoration: none;
+    display: inline;
+    margin: auto;
+    margin-bottom: 25px;
+    width: 52%;
+    
+}
+
+nav a{
+
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    
+}
+
+nav a:hover{ /*quando passar o mouse em cima do link ele desenha um sublinhado e muda de cor*/
+
+    color: red;
+    
+}
+
+/*Menu configuração*/
+
+:root {
+    --cor-fundo: rgb(34, 41, 37);
+    --cor-hover: rgb(118, 180, 145);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+    
+}
+
+.dp-menu ul li a {
+    /*color: var(--cor-primaria);*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+    border-radius: 10px;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px;
+    
+}
+
+.dp-menu ul ul li a {
+    display: block;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+main { 
+
+    min-width: 300px;
+    max-width: 1100px;
+    margin: auto;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    background-color:rgba(255, 255, 255, 0.39);
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+article h1{
+    
+    margin-top:30px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.83);
+    
+}
+
+
+article img{
+
+    width: 155px;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 3px 3px 8px black;
+   
+}
+
+
+article p{
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin-left: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ 
+}
+
+article h2{
+
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-family: 'motogp';
+    
+}
+
+article div img{
+
+    float: none;
+        
+}
+
+article div a{
+
+    padding-left: 20px;
+}
+
+article div #caled{
+
+width: 650px;
+border-radius: 35px;
+display: flex;
+margin: auto;
+
+
+
+
+
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+footer picture{
+
+    display: table;
+    margin: auto;
+}
+
+
+footer p{
+
+    width: 230px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+
+
+footer picture img{
+    
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 10px;
+
+}
+footer #autor{
+
+   
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding: 0px;
+    padding-left: 200px;  
+}
